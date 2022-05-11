@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Amanda Lu">
+
+
+
+
+
+<title>Chapter 12 Economics of inequality and poverty | Dear E</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Amanda&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Amanda&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6;    // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function () {
+            tocbot.refresh(obj_merge(tocbot_default_config, { hasInnerContainers: true }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function () {
+        tocbot.init(obj_merge(tocbot_default_config, { collapseDepth: 1 }));
+    });
+
+    function expandToc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, { collapseDepth: expanded ? 1 : DEPTH_MAX }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Chapter 12 Economics of inequality and poverty</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Amanda Lu</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">May 11, 2022&nbsp;&nbsp;17:25:34</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Economics/">Economics</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="Chapter-12-Economics-of-inequality-and-poverty"><a href="#Chapter-12-Economics-of-inequality-and-poverty" class="headerlink" title="Chapter 12 Economics of inequality and poverty"></a>Chapter 12 Economics of inequality and poverty</h1><h2 id="12-1-Inequality"><a href="#12-1-Inequality" class="headerlink" title="12.1 Inequality"></a>12.1 Inequality</h2><h3 id="Concepts"><a href="#Concepts" class="headerlink" title="Concepts"></a>Concepts</h3><ul>
+<li><p><strong>equity</strong>: being fair (多指道义上，思想上的公平。）</p>
+</li>
+<li><p><strong>equality</strong>: being equal with respect to sth.（强调资源分配上的平均、公平。）</p>
+</li>
+<li><p><strong>income</strong>: the money received by owners of fop</p>
+</li>
+<li><p><strong>wealth</strong>: the money or assets that people own (saving deposits, stocks, houses, painting)</p>
+<h3 id="Economic-inequality"><a href="#Economic-inequality" class="headerlink" title="Economic inequality"></a>Economic inequality</h3></li>
+<li><p>def: degree of ppl in a population differ in the ability to satisfy the economic needs; inequality in living conditions caused by monetary factors</p>
+</li>
+<li><p>sources of economic inequality</p>
+<ul>
+<li>income</li>
+<li>wealth</li>
+<li>education</li>
+<li>health</li>
+<li>nutrition</li>
+<li>gender</li>
+<li>…（race)<h3 id="Wealth-inequality"><a href="#Wealth-inequality" class="headerlink" title="Wealth inequality"></a>Wealth inequality</h3></li>
+</ul>
+</li>
+<li><p>wealth inequality arises from differences in <strong>the amount wealthy people own</strong> (savings, land, houses, jewelry)</p>
+</li>
+<li><p>income and wealth inequalities affect each other, their measurement applies to each other</p>
+</li>
+<li><p>wealth inequality &gt; income inequality</p>
+<ul>
+<li>low and middle income: Limited growth in wages <ul>
+<li>more difficult to accumulate wealth</li>
+</ul>
+</li>
+<li>High income: consume smaller % of income than low-incomes<ul>
+<li>easier to accumulate wealth<h3 id="Income-Inequality"><a href="#Income-Inequality" class="headerlink" title="Income Inequality"></a>Income Inequality</h3></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>income inequality arises from differences in <strong>how even income distribution is in a population</strong></p>
+</li>
+<li><p>income: Wage, interests from saving, rent from property</p>
+<h3 id="How-to-measure-income-inequality"><a href="#How-to-measure-income-inequality" class="headerlink" title="How to measure income inequality"></a>How to measure income inequality</h3></li>
+<li><p>presense of inequalities in income distribution</p>
+<ul>
+<li>poorest quintile (20%) receives less than 20% of income </li>
+<li>richest quintile receives more than 20% of income <h3 id="The-Lorenz-curve"><a href="#The-Lorenz-curve" class="headerlink" title="The Lorenz curve"></a>The Lorenz curve</h3></li>
+</ul>
+</li>
+<li><p>lorenz curve: degree of income inequality in an economy</p>
+</li>
+<li><p>diagonal line: perfect equality in income distribution</p>
+</li>
+<li><p>mechanism: closer btw 2 lines, greater income equality</p>
+</li>
+<li><p>diagram:</p>
+<h3 id="Gini-coefficient"><a href="#Gini-coefficient" class="headerlink" title="Gini coefficient"></a>Gini coefficient</h3></li>
+<li><p>def:  $$\frac{area\ btw\ the\ diagonal\ and \ lorentz \ curve}{total\ area\ under\ the\ diagonal}$$</p>
+</li>
+<li><p>gini coefficient &#x3D; $$\frac{A}{A+B}$$</p>
+</li>
+<li><p>range: 0-1 (can  also be expressed in percentage 0-100 )</p>
+<ul>
+<li>closer to 0, greater the income equality</li>
+<li>closer to 1, greater the income inequality</li>
+<li><blockquote>
+<p>0.4 unequal</p>
+</blockquote>
+<h2 id="12-2-Poverty"><a href="#12-2-Poverty" class="headerlink" title="12.2 Poverty"></a>12.2 Poverty</h2></li>
+</ul>
+</li>
+<li><p>poverty refers to an <strong>inability to satisfy minimum consumption needs</strong>.</p>
+<h3 id="Absolute-poverty"><a href="#Absolute-poverty" class="headerlink" title="Absolute poverty"></a>Absolute poverty</h3></li>
+<li><p>def: refers to a situation where a person or family does not have enough income to meet basic human needs.</p>
+</li>
+<li><p>measured by a poverty line (a minimally sufficient income level to sustain a family in terms of food, housing, clothing, medical needs and  so on,)</p>
+</li>
+<li><p>eg. 1.9 dollar per day – world bank’s extreme poverty line</p>
+</li>
+<li><p>3.2 dollars – WB’s poverty line for lower-middle-income countries</p>
+</li>
+<li><p>5.5 dollars – WB’s poverty line for higher-middle-income countries<br>（这些数字不用记 有个印象即可）</p>
+</li>
+</ul>
+<h3 id="Relative-poverty"><a href="#Relative-poverty" class="headerlink" title="Relative poverty"></a>Relative poverty</h3><ul>
+<li><p>def: compares the income of individuals or households in a society with median incomes(中位数）</p>
+</li>
+<li><p>perfect income equality ➡️No relative poverty</p>
+</li>
+<li><p>the more unequal distribution of income ➡️ greater degree of relative poverty </p>
+</li>
+<li><p>eg. 50% of median income </p>
+<h3 id="Minimum-income-standards"><a href="#Minimum-income-standards" class="headerlink" title="Minimum income standards"></a>Minimum income standards</h3></li>
+<li><p>refers to a method to measure overty consisting of ongoing research on what people in a population <strong>believe are the essentials</strong> for minimum acceptable standard of living that allows people to participate in society. </p>
+<ul>
+<li>is used to create a basket of goods needed to achieve its minimum</li>
+<li>eg. food, clothing, housing, childcare, cultural participation</li>
+</ul>
+</li>
+<li><p>the MIS reveals important infomation about: </p>
+<ul>
+<li>the number of people living below the minimum income required to buy the essentials</li>
+<li>the relative contribution of each item in the basket to households’ abilities to achieve MIS</li>
+<li>how these change over time<h3 id="Composite-indicators"><a href="#Composite-indicators" class="headerlink" title="Composite indicators"></a>Composite indicators</h3></li>
+</ul>
+</li>
+</ul>
+<p>Multidimensional Poverty Index(MPI): measures poverty in</p>
+<blockquote>
+<p>health: child mortality, nutrition<br>education： years of schooling, schoool attendance<br>living standards: cooking fuel, sanitation, drinking water, electricity, housing, assets</p>
+</blockquote>
+<ul>
+<li>0~1: the higher the value, the greater poverty</li>
+<li>MPI of the world bank <table>
+<thead>
+<tr>
+<th align="left">income per capita</th>
+<th align="left">electricity</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">child school enrollment</td>
+<td align="left">coverage of key health services</td>
+</tr>
+<tr>
+<td align="left">adult school attainment</td>
+<td align="left">mainourishment (child and adult)</td>
+</tr>
+<tr>
+<td align="left">limited-standard drinking water</td>
+<td align="left">incidence of crime</td>
+</tr>
+<tr>
+<td align="left">limited-standard sanitation</td>
+<td align="left">incidence of natural disaster</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h3 id="Difficulties-in-measuring-poverty"><a href="#Difficulties-in-measuring-poverty" class="headerlink" title="Difficulties in measuring poverty"></a>Difficulties in measuring poverty</h3><ul>
+<li>poverty has different meanings and difficult approaches to measure </li>
+<li>measure problems <ul>
+<li>income measures do not take wealth or savings into considerations </li>
+<li>poverty measured by use of household survey<ul>
+<li>subjective infomation</li>
+<li>do not include homeless people and people in institutions - underestimate</li>
+<li>understate income from freelance work and investment - overestimate</li>
+</ul>
+</li>
+<li>urban areas have  higher cost of living - exclude the poor in urban </li>
+<li>poverty lines only tells how many people, not how much the poor fall below the poverty line</li>
+</ul>
+</li>
+<li>overestimation or underestimation of the national poverty line<h2 id="12-3-Causes-of-economic-inequality-and-poverty"><a href="#12-3-Causes-of-economic-inequality-and-poverty" class="headerlink" title="12.3 Causes of economic inequality and poverty"></a>12.3 Causes of economic inequality and poverty</h2></li>
+</ul>
+<ol>
+<li>inequality of oppotunity</li>
+</ol>
+<ul>
+<li>Opportunity: a set of circumstances that makes it possible for someone to do something.<ul>
+<li>Parents’level of education and occupation </li>
+<li>Parents’level of income </li>
+<li>Place of birth </li>
+<li>Gender </li>
+<li>Race and ethnicity</li>
+<li>…</li>
+</ul>
+</li>
+<li>different levels of human capital</li>
+<li>different levels of resource ownership</li>
+<li>discrimination</li>
+<li>unequal status and power<ul>
+<li>status: one’s social or professional position in a society</li>
+</ul>
+</li>
+<li>government tax and benefits policies</li>
+<li>technological change</li>
+<li>globalisation</li>
+<li>market-based supply-side policies</li>
+<li>High abnormal profits of firms with increasing market power</li>
+<li>increases in pay of certain occupations</li>
+<li>unemployment</li>
+<li>geography</li>
+<li>age</li>
+<li>poverty<h2 id="12-4-The-impact-of-income-and-wealth-inequality"><a href="#12-4-The-impact-of-income-and-wealth-inequality" class="headerlink" title="12.4 The impact of income and wealth inequality"></a>12.4 The impact of income and wealth inequality</h2></li>
+</ul>
+<blockquote>
+<p>economic growth (bad for income &amp; wealth inequality: 富人越富)<br>standards of living<br>social stability </p>
+</blockquote>
+<h3 id="On-economic-growth"><a href="#On-economic-growth" class="headerlink" title="On economic growth"></a>On economic growth</h3><ul>
+<li><p>inequality reduces the ability of lower income households to invest in human and physical capital</p>
+<ul>
+<li>➡️lower labor productivity  </li>
+<li>➡️Lower economic growth</li>
+<li>income inequality ➡️ inequality of opportunities in education<br><strong>Reasons why inequality leads to lower growth:</strong></li>
+</ul>
+</li>
+<li><p>inequality reduces the ability of lower income households to invest in human and physical capital</p>
+<ul>
+<li>lower labor productivity </li>
+<li>lower economic growth</li>
+</ul>
+</li>
+<li><p>income inequality </p>
+<ul>
+<li>inequality of oppotunities in education </li>
+<li>low income is transferred to next generation</li>
+</ul>
+</li>
+<li><p>the wealthy spend lower fraction of incomes, and invest more abroad</p>
+<ul>
+<li>👉reduced resources available for domestic investment services</li>
+</ul>
+</li>
+<li><p>Reduced resources available for domestic investments</p>
+</li>
+<li><p>significant political control by the rich</p>
+<ul>
+<li>policies in favor of the rich</li>
+<li>go against interests of whole population</li>
+</ul>
+</li>
+<li><p>significant political control by the rich </p>
+<ul>
+<li>Less gov provision of merit goods</li>
+<li>go against interests of lower income group</li>
+<li>lower econ growth<br>(贫富差距大弊大于利)</li>
+</ul>
+</li>
+<li><p>inequality decreases the demand for locally produced goods and services</p>
+<ul>
+<li>discourage local production</li>
+<li>lower employment and investment</li>
+<li>lower growth</li>
+</ul>
+</li>
+<li><p>high inequality</p>
+<ul>
+<li>👉the poor do not have collateral</li>
+<li>👉unable to obtain credit</li>
+<li>👉fewer investment(eg education, health care in human capital)</li>
+<li>👉lower growth<h3 id="On-living-standards"><a href="#On-living-standards" class="headerlink" title="On living standards"></a>On living standards</h3></li>
+</ul>
+</li>
+<li><p>lack of access to health care and education </p>
+</li>
+<li><p>higher infant, child and maternal mortality</p>
+</li>
+<li><p>higher levels of preventable diseases</p>
+</li>
+<li><p>social problems</p>
+</li>
+<li><p>Inability to realize one’s full potential </p>
+<h3 id="On-social-and-political-stability"><a href="#On-social-and-political-stability" class="headerlink" title="On social and political stability"></a>On social and political stability</h3></li>
+</ul>
+<p>(如果社会阶级差距比较大 会起义混乱之类的）</p>
+<ul>
+<li>polarize and divide societies<ul>
+<li>reduce social solidarity and trust in system</li>
+</ul>
+</li>
+<li>strong political influence by the rich<ul>
+<li>➡️In favor of the rich</li>
+<li>➡️vicious circle of greater economic inequality and political inequality</li>
+</ul>
+</li>
+<li>dissatisfaction to the poor (feeling socially inferior)<ul>
+<li>➡️social conflict (especially when the gov further serve the interests of supporters)<h2 id="12-5-policies-to-reduce-inequalities-and-poverty"><a href="#12-5-policies-to-reduce-inequalities-and-poverty" class="headerlink" title="12.5 policies to reduce inequalities and poverty"></a>12.5 policies to reduce inequalities and poverty</h2></li>
+</ul>
+</li>
+</ul>
+<h3 id="Direct-taxes"><a href="#Direct-taxes" class="headerlink" title="Direct taxes"></a><strong>Direct taxes</strong></h3><p>def: taxes paid directly the government tax authorities by the taxpayer.</p>
+<ul>
+<li>personal income taxes<ul>
+<li>most important source of gov tax revenue</li>
+<li>on all forms of income</li>
+</ul>
+</li>
+<li>corporate income taxes<ul>
+<li>Taxes o the profits of corporations</li>
+</ul>
+</li>
+<li>wealth taxes<ul>
+<li>taxes on the ownership of assets</li>
+<li>eg. Property taxes, inheritance taxes</li>
+</ul>
+</li>
+<li>social insurance contribution <ul>
+<li>Taxes paid by workers and their employees, used to finance specific expenditure</li>
+<li>eg. pensions, social insurance<h3 id="Indirect-taxes"><a href="#Indirect-taxes" class="headerlink" title="Indirect taxes"></a><strong>Indirect taxes</strong></h3></li>
+</ul>
+</li>
+</ul>
+<p>def: taxes on spending on goods and services, paid indirectly through suppliers to the government.</p>
+<ul>
+<li><p>general expenditure taxes&#x2F;sales taxes</p>
+<ul>
+<li>taxes on spending or sales of goods and services</li>
+<li>Fixed % of the retail price of goods and services(就是价格的百分之多少）</li>
+</ul>
+</li>
+<li><p>excise taxes</p>
+<ul>
+<li>taxes paid on specific goods and services</li>
+</ul>
+</li>
+<li><p>customs duties &#x2F; tariffs</p>
+<ul>
+<li>tax on imports</li>
+</ul>
+</li>
+<li><p>to ⬇️Imports and ⬆️ tax revenue</p>
+<h3 id="Proportional-progressive-regressive-taxation"><a href="#Proportional-progressive-regressive-taxation" class="headerlink" title="Proportional, progressive, regressive taxation"></a>Proportional, progressive, regressive taxation</h3></li>
+<li><p>proportional taxation </p>
+<ul>
+<li>as income increase, the fraction of income paid as taxes remains constant</li>
+<li>constant tax rate </li>
+<li>eg. corporate taxes, social insurance contributions</li>
+</ul>
+</li>
+<li><p>progressive taxation </p>
+<ul>
+<li>as income increase, the fraction of income paid as taxes increases</li>
+</ul>
+</li>
+<li><p>regressive taxation</p>
+<ul>
+<li>as income increase, the fraction of income paid as taxes decreases</li>
+<li>decreasing tax rate</li>
+<li>eg. Indirect taxes(fixed amount)</li>
+</ul>
+</li>
+<li><p>the more progressive a tax system, the more equal is the after-tax distribution of income<br>(proportional 就对于equity没有任何用）</p>
+</li>
+</ul>
+<h3 id="Calculations-of-direct-and-indirect-taxes"><a href="#Calculations-of-direct-and-indirect-taxes" class="headerlink" title="Calculations of direct and indirect taxes"></a>Calculations of direct and indirect taxes</h3><ul>
+<li><strong>Marginal tax rate</strong>: the tax rate paid on additional income</li>
+<li><strong>Average tax rate</strong>: tax paid divided by total income, expressed as a%.<br>eg #1. ＄200,000 annual</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">Annual income</th>
+<th align="left">Marginal tax rate %</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">0-10000</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">10001-25000</td>
+<td align="left">9</td>
+</tr>
+<tr>
+<td align="left">25001-55000</td>
+<td align="left">22</td>
+</tr>
+<tr>
+<td align="left">55001-115000</td>
+<td align="left">40</td>
+</tr>
+<tr>
+<td align="left">115001 or more</td>
+<td align="left">55</td>
+</tr>
+</tbody></table>
+<p>marginal tax rate&#x3D; 15000<em>0.09+30000</em>0.22+60000<em>0.4+85000</em>0.55&#x3D;78700</p>
+<p>average tax rate&#x3D; (78700&#x2F;200000) * 100% &#x3D; 39.35%</p>
+<p>eg #2.</p>
+<p>Suppose a family with an annual income of $60,000 pays income taxes of $15,000. The family spends all of its disposable income. This spending includes an indirect tax that is imposed on purchases of all goods and services of 12.5%. How much indirect tax the family pays?</p>
+<p><strong>Disposable income</strong> &#x3D; 45000$</p>
+<p><strong>Money spent on purchasing in disposable income</strong> &#x3D; 45000&#x2F;1+12.5%&#x3D;45000 &#x2F; 1.125 &#x3D;40000$</p>
+<p><strong>Indirect tax</strong> &#x3D; 45000-40000&#x3D;5000$</p>
+<p><strong>Average tax rate</strong>&#x3D; 5000&#x2F;60000 </p>
+<h3 id="Evaluating-taxes-as-a-policy-for-redistribution"><a href="#Evaluating-taxes-as-a-policy-for-redistribution" class="headerlink" title="Evaluating taxes as a policy for redistribution"></a>Evaluating taxes as a policy for redistribution</h3><h4 id="Pros"><a href="#Pros" class="headerlink" title="Pros"></a>Pros</h4><ul>
+<li>direct taxes which are progressive improve quality <ul>
+<li>… and thus economic growth</li>
+</ul>
+</li>
+<li>automatic stabilizer</li>
+<li>tax revenue -&gt;use these money to fund -&gt; help the poor<br>*diagram of promoting equity: lorenz curve inward</li>
+</ul>
+<h4 id="Cons"><a href="#Cons" class="headerlink" title="Cons"></a>Cons</h4><ul>
+<li>personal income taxes reduce incentive to work among high income earners<ul>
+<li>reduce quantity of labor and savings </li>
+<li>lower growth</li>
+</ul>
+</li>
+<li>corporate income taxes reduce incentive to invest<ul>
+<li>lower productin of new capitals </li>
+<li>lower growth</li>
+</ul>
+</li>
+<li>wealth raxes reduce incentive to invest in productive capitals<ul>
+<li>reduce efficiency and innovation </li>
+<li>lower growth <h3 id="Other-policies-to-reduce-income-and-wealth-inequalities-and-poverty"><a href="#Other-policies-to-reduce-income-and-wealth-inequalities-and-poverty" class="headerlink" title="Other policies to reduce income and wealth inequalities and poverty"></a>Other policies to reduce income and wealth inequalities and poverty</h3></li>
+</ul>
+</li>
+</ul>
+<h4 id="Polices-to-reduce-inequality-of-oppotunity"><a href="#Polices-to-reduce-inequality-of-oppotunity" class="headerlink" title="Polices to reduce inequality of oppotunity"></a>Polices to reduce inequality of oppotunity</h4><ul>
+<li>Investment in human capital<ul>
+<li>universal education and health care<br>(free of charge for very low incomes)</li>
+</ul>
+</li>
+</ul>
+<h4 id="Targeted-gov-spending-on-goods-and-services"><a href="#Targeted-gov-spending-on-goods-and-services" class="headerlink" title="Targeted gov spending on goods and services"></a>Targeted gov spending on goods and services</h4><ul>
+<li>provision of merit goods: education, health care, infrastructure<h4 id="Transfer-payment"><a href="#Transfer-payment" class="headerlink" title="Transfer payment"></a>Transfer payment</h4></li>
+</ul>
+<p>def: payments made by the gov to individuals specifically for the purpose of redistributing(transferring) income away from those who work and pay taxes and towards those who need assistance.</p>
+<ul>
+<li>vulnerable people: older people &#x2F; sick &#x2F;very poor &#x2F; children of poor families&#x2F; unemployed &#x2F; disabled people &#x2F; …<h4 id="Universal-basic-income"><a href="#Universal-basic-income" class="headerlink" title="Universal basic income"></a>Universal basic income</h4></li>
+</ul>
+<p>def: is a method intended to provide residents in a country with a sum of money that they would receive regardless of any other income they may have </p>
+<ul>
+<li><p>funds from taxes and savings from cutting other social service programs<br><strong>pros:</strong></p>
+</li>
+<li><p>effective in reducing poverty</p>
+</li>
+<li><p>free to leave jobs unhappy with</p>
+</li>
+<li><p>like automatic stabilizers during recession<br><strong>cons:</strong></p>
+</li>
+<li><p>too expensive to provide to all people </p>
+</li>
+<li><p>oppotunity cost of gov spending </p>
+</li>
+<li><p>reduced incentive to work</p>
+<h4 id="Policies-to-reduce-discrimination"><a href="#Policies-to-reduce-discrimination" class="headerlink" title="Policies to reduce discrimination"></a>Policies to reduce discrimination</h4></li>
+<li><p>by laws, education, management training on anti-discrimination practices, communications to employees</p>
+<h4 id="Gov-intervention"><a href="#Gov-intervention" class="headerlink" title="Gov intervention"></a>Gov intervention</h4></li>
+<li><p>minimum wage </p>
+</li>
+<li><p>price ceiling</p>
+<ul>
+<li>make food more affordable to low-income groups</li>
+<li>rent control to support low-income people</li>
+</ul>
+</li>
+<li><p>price floor for farmers (+ gov purchase)</p>
+<ul>
+<li>increase incoem for farmenrs</li>
+<li>both price ceiling and price floor lead to allocative inefficiency and loss of social surplus</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Amanda Lu</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://example.com/2022/05/11/Chapter%2012%20Economics%20of%20inequality%20and%20poverty/">http://example.com/2022/05/11/Chapter%2012%20Economics%20of%20inequality%20and%20poverty/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Economics/"># Economics</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2022/05/10/my-first-post/">my-first-post</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Amanda Lu | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
