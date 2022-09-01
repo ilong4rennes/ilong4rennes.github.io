@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Amanda Lu">
+
+
+
+
+
+<title>History of Western Philosophy | AL&#39;s Voyage</title>
+
+
+
+    <link rel="icon" href="/image/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">楚练照川明</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">楚练照川明</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">History of Western Philosophy</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Amanda Lu</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">July 25, 2022&nbsp;&nbsp;6:09:16</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Philosophy/">Philosophy</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="Ancient-Philosophy"><a href="#Ancient-Philosophy" class="headerlink" title="Ancient Philosophy"></a>Ancient Philosophy</h1><h2 id="Pre-Socratics"><a href="#Pre-Socratics" class="headerlink" title="Pre-Socratics"></a>Pre-Socratics</h2><h3 id="自然派哲学家"><a href="#自然派哲学家" class="headerlink" title="自然派哲学家"></a>自然派哲学家</h3><p>一．概述</p>
+<ol>
+<li>研究方向：大自然与它循环的变化</li>
+<li>前提：<ol>
+<li>大自然的变化必定是由某种基本物质造成的。<ol>
+<li>[由他们在物质世界观察到的变化引出]</li>
+</ol>
+</li>
+<li>世上必定有某种东西，万物皆由此衍生，而且最终仍旧回归于此。<ol>
+<li>[由他们想要寻求隐含的自然法则引出]</li>
+</ol>
+</li>
+<li>总的来说，他们想要透过对大自然的本身的研究来了解实际的变化过程。</li>
+</ol>
+</li>
+<li>哲学自此脱离了宗教的范畴。</li>
+</ol>
+<p>二．泰利斯</p>
+<ol>
+<li>世界上一切事物皆由一种基本物质构成，即为水。</li>
+<li>万物皆有神在。</li>
+</ol>
+<p> </p>
+<p>三．安纳克西曼德</p>
+<ol>
+<li>世界上一切事物并非由一种基本物质构成，而是一种无以名之的物质。</li>
+</ol>
+<p> </p>
+<p>四．安纳西梅尼斯</p>
+<ol>
+<li>世界上一切事物皆由一种基本物质构成，即为气体。</li>
+</ol>
+<p> </p>
+<p>五．帕梅尼德斯 （前提：世间只有一种基本物质。）</p>
+<ol>
+<li>没有任何事物会改变，现有的万物是一直存在的。</li>
+<li>感官不可靠，应该依赖理智。</li>
+<li>没有任何一件事物可以来自于虚无。</li>
+</ol>
+<p> </p>
+<p>六．赫拉克利特斯（前提：世间只有一种基本物质。）</p>
+<ol>
+<li>万物都会改变。</li>
+<li>感官是可靠的。</li>
+<li>世间的事物都是相对的。</li>
+<li>世上有一种“普遍的理性”，为所有人所具备，并奉为行事准则。</li>
+</ol>
+<p> </p>
+<p>七．恩培窦克里斯</p>
+<ol>
+<li><p>帕梅尼德斯与赫拉克利特斯的前提一致，但结论完全矛盾。故前提错误。世间不可能只有一种基本物质。</p>
+</li>
+<li><p>没有任何事物会改变。</p>
+</li>
+<li><p>感官可靠。</p>
+</li>
+<li><p>物质：大自然由四种元素构成——土，气，水，火。</p>
+</li>
+<li><p>大自然的变化：这四种元素相互结合或分离。</p>
+</li>
+<li><p>自然力：爱使事物聚合，恨使事物分散。<br>八．安纳萨科拉斯</p>
+</li>
+<li><p>物质：大自然是由微小粒子（即种子）所组成的。</p>
+</li>
+<li><p>整体存在于每一个微小部分中。</p>
+</li>
+<li><p>自然力：“心灵”或“睿智”可以创造万物。</p>
+</li>
+</ol>
+<p> </p>
+<p>九．德谟克里特斯（前提：没有任何事物会改变，消失，来自于虚无。）</p>
+<ol>
+<li>万物是流动的，原子是永恒的。</li>
+<li>大自然由可以无限次聚散的无限小单位组成。</li>
+<li>世间唯一存在的东西是原子和虚空。</li>
+</ol>
+<p> </p>
+<h2 id="Classical-Period"><a href="#Classical-Period" class="headerlink" title="Classical Period"></a>Classical Period</h2><h3 id="Socrates"><a href="#Socrates" class="headerlink" title="Socrates"></a>Socrates</h3><h3 id="Plato"><a href="#Plato" class="headerlink" title="Plato"></a>Plato</h3><h3 id="Aristotle"><a href="#Aristotle" class="headerlink" title="Aristotle"></a>Aristotle</h3><p> </p>
+<h2 id="Hellenistic-and-Roman-Philosophy"><a href="#Hellenistic-and-Roman-Philosophy" class="headerlink" title="Hellenistic and Roman Philosophy"></a>Hellenistic and Roman Philosophy</h2><p> </p>
+<h1 id="Medieval-Philosophy"><a href="#Medieval-Philosophy" class="headerlink" title="Medieval Philosophy"></a>Medieval Philosophy</h1><h3 id="Anselm-1033-1109"><a href="#Anselm-1033-1109" class="headerlink" title="Anselm (1033-1109)"></a>Anselm (1033-1109)</h3><ul>
+<li>God is the greatest being imaginable. God is the supreme being.</li>
+<li>Ontological argument: God that only existed in our minds but not in the reality wouldn’t be the greatest thing being conceivable. One that actually existed would certainly be greater. An imagined God cannot be greater than an existing one. God must exist.</li>
+<li>God exists simply from the fact that we have an idea of God.<ul>
+<li>Priori argument</li>
+<li>Logical argument</li>
+</ul>
+</li>
+<li>Example: painter</li>
+</ul>
+<p> </p>
+<h3 id="Gaunilo-of-Marmoutiers"><a href="#Gaunilo-of-Marmoutiers" class="headerlink" title="Gaunilo of Marmoutiers"></a>Gaunilo of Marmoutiers</h3><ul>
+<li>Criticized Anselm’s reasoning</li>
+<li>Example: perfect island</li>
+<li>Anselm replied: that his argument only worked in the case of God</li>
+</ul>
+<p> </p>
+<h3 id="Thomas-Aquinas-1225-1274"><a href="#Thomas-Aquinas-1225-1274" class="headerlink" title="Thomas Aquinas (1225-1274)"></a>Thomas Aquinas (1225-1274)</h3><ul>
+<li><em>Summa Theologica</em></li>
+<li>Five Ways to demonstrate God exists<ul>
+<li>Cosmological Argument – First Cause Argument: an infinite regress<ul>
+<li>Objection 1 from later philosophers: uncaused cause? It could have been some kind of surge of energy rather than a personal God.</li>
+<li>Objection 2: We don’t have to accept his assumption that there couldn’t be an infinite regress of effects and their causes</li>
+</ul>
+</li>
+<li>Teleological Argument – intelligent design</li>
+</ul>
+</li>
+</ul>
+<h1 id="Renaissance-Philosophy"><a href="#Renaissance-Philosophy" class="headerlink" title="Renaissance Philosophy"></a>Renaissance Philosophy</h1><h3 id="Niccolo-Machiavelli"><a href="#Niccolo-Machiavelli" class="headerlink" title="Niccolò Machiavelli"></a>Niccolò Machiavelli</h3><ul>
+<li>Sometimes it is better to tell lies, break your promises, and even murder your enemies.</li>
+<li>An effective prince has to learn how not to be good. The most important thing was to stay in power.</li>
+<li><em>The Prince (1532)</em><ul>
+<li>A guidebook for those who had recently come to power</li>
+</ul>
+</li>
+<li>The only leader who really impressed him was Cesare Borgia, a ruthless man, the illegitimate son of Pope Alexander VI. “Borgia did everything right but was defeated by bad luck.”</li>
+<li>Success depends on quite a lot on good luck. 50% by chance, 50% by our choices.<ul>
+<li>You can improve your odds of success by acting bravely and swiftly.</li>
+<li>A leader who prepares well and seizes the moment when it comes is more likely to do well than one who doesn’t.</li>
+</ul>
+<p> </p>
+</li>
+<li><em>Virtu</em></li>
+<li>It’s better for a leader to be feared than to be loved.<ul>
+<li>If you rely on your people loving you, then you risk them abandoning you when times get tough.</li>
+<li>If they fear you, they will be too scared to betray you.</li>
+</ul>
+</li>
+<li>Cynicism: low view of human nature<ul>
+<li>Human beings are unreliable, greedy, and dishonest.</li>
+<li>It’s dangerous to trust anyone to keep their promises unless they are terrified of the consequences of not keeping them.</li>
+</ul>
+</li>
+<li>An effective leader would have to act like a beast.</li>
+</ul>
+<h1 id="Modern-Philosophy"><a href="#Modern-Philosophy" class="headerlink" title="Modern Philosophy"></a>Modern Philosophy</h1><h2 id="Empiricism"><a href="#Empiricism" class="headerlink" title="Empiricism"></a>Empiricism</h2><h3 id="Thomas-Hobbes"><a href="#Thomas-Hobbes" class="headerlink" title="Thomas Hobbes"></a>Thomas Hobbes</h3><ul>
+<li>Low view of human beings<ul>
+<li>Selfish, driven by the fear of death, hope of personal gain, seek power over others</li>
+</ul>
+</li>
+<li>Consequence: If society broke down and you have to live in what he called “a state of nature”, without laws or anyone with the power to back you up, you, like anyone else, would steal and murder when necessary.<ul>
+<li>Life outside society would be ‘solitary, poor, nasty, brutish, and short’.</li>
+</ul>
+</li>
+<li>The solution was to put some powerful individual or parliament in charge. The individuals in the state of nature would have to enter into a ‘social contract’, an agreement to give up some of their dangerous freedoms for the sake of safety.<ul>
+<li>They’d be better off with a powerful authority in charge than all fighting each other.</li>
+</ul>
+</li>
+<li>Laws are no good if there isn’t someone or something strong enough to make everyone follow them.</li>
+<li><em>Leviathan</em> (1651): the steps needed to move from the nightmarish situation of the state of nature to a secure society in which life is bearable.</li>
+<li>Materialist: humans were simply physical beings. There is no such thing as the soul: we are merely bodies, which are ultimately complex machines.<ul>
+<li>Clockwork mechanisms were the most advanced technology in the 17th century.</li>
+<li>All aspects of human existence, including thinking, were physical activities. There was no space for the soul.</li>
+<li>God must be a large physical object.</li>
+</ul>
+</li>
+<li>Counterargument: The state he describes is what we would now call an authoritarian one: the sovereign has almost unlimited power over citizens.</li>
+<li>Hobbes didn’t believe in democracy and the ability of the people to make decisions for themselves.</li>
+</ul>
+<p> </p>
+<h3 id="John-Locke-1632-1704"><a href="#John-Locke-1632-1704" class="headerlink" title="John Locke (1632-1704)"></a>John Locke (1632-1704)</h3><ul>
+<li><em>An Essay Concerning Human Understanding</em> (1690): Our ideas represent the world to us, but that only some aspects of that world are as they seem.</li>
+<li>We have a God-given right to life, freedom, happiness, and property  US Constitution</li>
+<li>Should we trust our perceptions of the outside world?<ul>
+<li>Primary qualities: qualities that physical objects themselves have<ul>
+<li>Solidity, density, weight, mass, height, depth, width…</li>
+</ul>
+</li>
+<li>Secondary qualities: (not real) color, taste, smell, sound<ul>
+<li>Are not objectively real, they can only be subjectively perceived.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>In what sense will you be the same person as that baby when you are old?<ul>
+<li>I could be the same ‘man’ (human-animal), but not the same <em>person</em> I was previously.</li>
+<li>What makes us the same person over time is our consciousness, our awareness of our own selves.<ul>
+<li>Example: Prince and Cobbler</li>
+</ul>
+</li>
+<li>Personal identity (- moral responsibility): psychological continuity &gt; bodily continuity<ul>
+<li>God would only punish people for crimes they remembered committing.</li>
+</ul>
+</li>
+<li>Multiple personality disorder: If these two minds have no access to each other, then they are two persons.</li>
+<li>You were the same person in the afterlife rather than the same body.</li>
+<li>Consequence: You aren’t the same person as the baby in the photo unless you can remember being a baby.</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h3 id="Thomas-Reid"><a href="#Thomas-Reid" class="headerlink" title="Thomas Reid"></a>Thomas Reid</h3><ul>
+<li>Show a weakness in Locke’s way of thinking about what it is to be a person<ul>
+<li>Example: The old remembers when he was young, the young man remembers when he was a boy, but the old doesn’t remember being a boy.</li>
+<li>A &#x3D; B, B &#x3D; C, but A !&#x3D; C.</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h3 id="George-Berkeley"><a href="#George-Berkeley" class="headerlink" title="George Berkeley"></a>George Berkeley</h3><ul>
+<li>Questioned the distinction that Locke made between primary and secondary qualities.<ul>
+<li>You don’t perceive primary qualities of an object, while totally disregarding the secondary qualities.</li>
+</ul>
+</li>
+<li>Primary and secondary qualities are inextricably linked. So the primary qualities can’t be real either.</li>
+<li>There’s no such thing as matter. Instead, there’s only perceptions and perceivers. The perceivers themselves don’t really have any physical form. They’re just disembodied minds perceiving things that aren’t really there.</li>
+<li>“Esse Est Percepi” To be is to be perceived.</li>
+<li>Anything that stops being observed ceases to exist.</li>
+<li>You have experiences about a book. It doesn’t mean that there is something out there in the world causing these experiences. The book is just a collection of ideas in your mind and in other people’s minds, not something beyond your mind.</li>
+<li>The whole notion of an outside world made no sense at all.</li>
+<li>Counterargument by Samuel Johnson<ul>
+<li>Material things do exist and aren’t just composed of ideas.</li>
+<li>Example: He could feel that stone hard against his toe when he kicked it.</li>
+</ul>
+</li>
+<li>Counter-counterargument: Feeling the hardness of a stone against your foot wouldn’t prove the existence of material objects, only the<em>idea</em> of a hard stone.</li>
+<li>There is no ‘real’ physical stone behind it causing the pain in the foot. In fact, there is no reality at all beyond the ideas we have.</li>
+<li>The only thing that kept everything from disappearing into oblivion is God. God was the Ultimate Perceiver. God is always watching, with unblinking perception that holds objects in existence even when we’re not paying attention.</li>
+<li>Idealist: He believed that all that exist are ideas</li>
+<li>Immaterialist: He denied that material things – physical objects – exist.</li>
+</ul>
+<p> </p>
+<h3 id="David-Hume-1711-1776"><a href="#David-Hume-1711-1776" class="headerlink" title="David Hume (1711-1776)"></a>David Hume (1711-1776)</h3><ul>
+<li>Design Argument: the Divine Watchmaker must have made the intricate world.<ul>
+<li>What many people thought in the 18th century</li>
+<li>Background: discovery of… seem to be put together with great precision<ul>
+<li>Microscopes: complexity of tiny pond animals</li>
+<li>Telescopes: beauty and regularity of the solar system and the Milky Way</li>
+</ul>
+</li>
+<li>Hume believed this argument was based on bad logic.</li>
+</ul>
+</li>
+<li>Our knowledge comes from observation and experience.</li>
+<li><em>Enquiry Concerning Human Understanding</em> (1748)</li>
+<li>Attacked the Argument from Miracles (eyewitness reports of miracles)</li>
+<li><em>Dialogues Concerning Natural Religion</em> (1779)</li>
+<li>Cause and effects<ul>
+<li>Example: weighing scales partly behind a screen</li>
+<li>What caused the pan to move upwards? We can’t say anything more than “something weighs heavier than the pan”, like the color, shape, number of the object, or it would be complete guesswork.</li>
+<li>The Design Argument is similar to this solution.</li>
+</ul>
+</li>
+<li>There is a divine intelligence behind everything in the universe, it’s just that we can never say too much about the qualities of that divine intelligence.</li>
+<li>Our powers of reason, when used logically, don’t tell us much at all about what qualities this ‘God’ must have.</li>
+<li>“no more worried about the time after his death than he was about the time he had not existed before his birth.” - Epicurus</li>
+</ul>
+<p> </p>
+<h2 id="Rationalism"><a href="#Rationalism" class="headerlink" title="Rationalism"></a>Rationalism</h2><h3 id="Rene-Descartes"><a href="#Rene-Descartes" class="headerlink" title="René Descartes"></a>René Descartes</h3><p>一．现代的哲学之父</p>
+<ol>
+<li>研究方向：我们所拥有的确实知识；肉体与灵魂的关系</li>
+<li>自文艺复兴后第一个将现代思想整理成哲学体系的人</li>
+</ol>
+<p> </p>
+<p>二．我思故我在</p>
+<ol>
+<li>怀疑一切事物</li>
+<li>用‘数学方法’来进行哲学思考，唯有理性才能使我们获得确实的知识。<ol>
+<li>-      将一个复杂的问题尽量拆分成许多不同的因素</li>
+<li>-      从最简单的思想出发到最复杂的，将每一种思想斟酌并衡量</li>
+<li>-      时时将各种因素加以列举与控制，以确定没有遗留任何因素</li>
+</ol>
+</li>
+<li>有一件事情必定是真的，那就是他怀疑，怀疑时他必定在思考，那么他必定是一个会思考的存在者：<strong>我思故我在。</strong>这个事实比我们用感官观察到的物质世界更加真实。</li>
+<li>在他的心灵中，完美实体的概念一直存在，并且这个概念的一大特性就是它一定存在。但是，完美实体的概念不可能来自一个本身并不完美的人，也就是他本身，所以它必定来自那个完美实体本身，也就是上帝。<strong>上帝必定存在。</strong></li>
+<li>外在现实世界的概念可能是幻象。对于现实世界，‘量’方面的特性是我们可以用理性查知并确定的，‘质’方面的特性与感官经验有关，不足以描述外在的真实世界。</li>
+<li>‘上帝可以保证’我们用理智所认知到的一切事物必然会与现实世界相符。</li>
+</ol>
+<p> </p>
+<p>三．二元论</p>
+<ol>
+<li>宇宙间有两种不同形式的真实世界。一种实体被称为思想或灵魂，属于意识，不占空间，不可分解；另一种实体被称为‘扩展’或物质，占空间，可以一再被分解，无意识。两种实体都来自于上帝，上帝独立存在，不隶属于任何事物。二者彼此没有任何接触。</li>
+<li>人是一种二元的存在物，既会思考又会占空间，既有灵魂又有扩展的身体。</li>
+<li>人的身体就是一部机器。</li>
+<li>我们用理智所思考的东西，发生于灵魂中，不受真实世界所左右。</li>
+<li>身体与灵魂时常在松果腺内会发生相互作用，但是思想有能力超脱身体的需求。</li>
+</ol>
+<p> </p>
+<h3 id="Blaise-Pascal"><a href="#Blaise-Pascal" class="headerlink" title="Blaise Pascal"></a>Blaise Pascal</h3><p> </p>
+<h3 id="Baruch-Spinoza"><a href="#Baruch-Spinoza" class="headerlink" title="Baruch Spinoza"></a>Baruch Spinoza</h3><p> </p>
+<p>一．“异端邪说”</p>
+<ol>
+<li>基督教和犹太教之所以流传至今，是因为严格的教条和外在的仪式。</li>
+<li>历史上第一个对圣经进行‘历史性批判’的人，否认整本圣经都是受到上帝的启示。主张我们应该对圣经进行批判性阅读。</li>
+</ol>
+<p> </p>
+<p>二．一元论</p>
+<ol>
+<li>泛神论者：万事万物都属于自然。上帝创造这个世界并不是为了操纵它，上帝不是一切，一切都在上帝之中。上帝与他的造物是一体的。<strong>万物一体。</strong></li>
+<li>用伦理学（指过善良生活必需的道德行为，也包括生活的艺术）来显示人类的生命乃是遵守大自然的普遍法则，我们只有挣脱感觉与冲动的束缚，才能获得快乐。</li>
+<li>宇宙间只有一种实体，即为上帝或称为大自然。</li>
+<li>我们人类只可以认出上帝的两种‘属性’（存在的证明），即为‘思想’和‘扩延’。但是上帝的属性远不止此，可能无尽。</li>
+<li>我们在日常生活中看到的每一种现象，都是思想属性或扩延属性的不同模态，即为实体的特殊表现方式。</li>
+<li>上帝是每一件事的‘内在因’，他只通过自然法则发言并主宰世界。</li>
+<li>决定论：物质世界中发生的每一件事都有其必要性</li>
+</ol>
+<p> </p>
+<p>三．自然法则</p>
+<ol>
+<li>外在因素（政治环境等）限制我们自由发展。</li>
+<li>内在因素（天性）限制我们自由发展。我们无法控制我们体内的每一件事，这是扩延属性的模态。</li>
+<li>世间只有一种存在是完全自主的，即为上帝。</li>
+<li>人永远无法获得自由意识，也没有自由的灵魂。</li>
+<li>我们内心的各种冲动使我们无法获得真正的幸福。只有从永恒的观点来看每一件事情，体认到每一件事情都有其必然性，都有关联，都是一体的，才能获得真正的幸福和满足。</li>
+<li><strong>实体（本质）</strong>**&#x3D;<strong><strong>上帝（万物的创造者）</strong></strong>&#x3D;<strong><strong>自然法则（天性）</strong></strong>&#x3D;<strong><strong>大自然（上帝的造物）</strong></strong>&#x3D;**<strong>宇宙间唯一的</strong></li>
+</ol>
+<p> 
+ </p>
+<h3 id="Gottfried-Leibniz-1646-1716"><a href="#Gottfried-Leibniz-1646-1716" class="headerlink" title="Gottfried Leibniz (1646-1716)"></a>Gottfried Leibniz (1646-1716)</h3><ul>
+<li>Principle of Sufficient Reason<ul>
+<li>Assumptions:<ul>
+<li>There must be a logical explanation for everything.</li>
+<li>God is perfect in every aspect.</li>
+</ul>
+</li>
+<li>Conclusion: God must have had excellent reasons for making the universe in precisely the form that he did. God must have made the best of all possible worlds, the one with the least amount of evil needed to achieve that result.</li>
+</ul>
+</li>
+<li>Difference between Spinoza and Leibniz: Does God have a choice? Spinoza says no; Leibniz says yes.<ul>
+<li>Spinoza says that God has only one world to choose from, namely, the one that follows ineluctably from its own Nature.</li>
+<li>Leibniz counters that God always has the option not to create the world; and, when God decides to go ahead with the project, he faces a choice among an infinite number of possible worlds.</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h2 id="Enlightenment-Philosophy"><a href="#Enlightenment-Philosophy" class="headerlink" title="Enlightenment Philosophy"></a>Enlightenment Philosophy</h2><h3 id="Voltaire-1694-1778"><a href="#Voltaire-1694-1778" class="headerlink" title="Voltaire (1694-1778)"></a>Voltaire (1694-1778)</h3><ul>
+<li>I hate what you said, but will defend to the death your right to say it.<ul>
+<li>Background: the Catholic Church strictly controlled what could be published.</li>
+</ul>
+</li>
+<li>Candide: undermine the optimism about humanity and the universe that Pope and Leibniz had expressed<ul>
+<li>Candide: gradually changed by what he witnesses</li>
+<li>Pangloss (philosophy tutor): refusal to see what is in front of him - mock Leibniz’s optimism</li>
+<li>1755: Lisbon earthquake, tsunami, fire - use this case against optimists</li>
+<li>Martin: the only way to make life bearable is to stop philosophizing and get down to work.</li>
+<li>“We must cultivate our garden.”<ul>
+<li>A metaphor for doing something useful for humanity rather than just talking about abstract philosophical questions.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Jean-Jacques-Rousseau-1712-1778"><a href="#Jean-Jacques-Rousseau-1712-1778" class="headerlink" title="Jean-Jacques Rousseau (1712-1778)"></a>Jean-Jacques Rousseau (1712-1778)</h3><ul>
+<li>True religion came from heart and didn’t need religious ceremonies.</li>
+<li>The Social Contract: “Man was born free, and everywhere he is in chains.”</li>
+</ul>
+<p>  </p>
+<h2 id="German-Idealism"><a href="#German-Idealism" class="headerlink" title="German Idealism"></a>German Idealism</h2><h3 id="Immanuel-Kant-–-our-relation-to-reality"><a href="#Immanuel-Kant-–-our-relation-to-reality" class="headerlink" title="Immanuel Kant – our relation to reality"></a>Immanuel Kant – our relation to reality</h3><ul>
+<li>We don’t have direct access to the world, we can never take the glasses off and see things as they truly are.</li>
+<li>All we can recognize is that it is there and understand how the glasses affect and color what we experience.</li>
+<li>Metaphysics: limits of what we can know and understand  The Critique of Pure Reason</li>
+<li>Noumenon: distinct from a thing knowable by the senses through phenomenal attributes</li>
+<li>We can’t know anything from the noumenal world.</li>
+<li>We can know about the phenomenal world.</li>
+<li>The noumenal world is lurking behind all our experiences.</li>
+<li>How is synthetic a priori knowledge possible?<ul>
+<li>Synthetic vs analytic (true by definition)<ul>
+<li>Analytic: know this is true without observing actual cases</li>
+<li>Synthetic knowledge: requires experiences or observation</li>
+</ul>
+</li>
+<li>Priori knowledge: the knowledge that is independent of &#x2F; prior to experience<ul>
+<li>Empiricists: we didn’t have (Locke)<ul>
+<li>A child’s mind was a blank state</li>
+<li>This makes: “analytic &#x3D; Priori” interchangeable</li>
+<li>But Kant doesn’t think so.</li>
+<li>Synthetic a priori knowledge: Knowledge that reveals the truth about the world, yet is arrived at independently of experience (eg. 7+5&#x3D;12)</li>
+</ul>
+</li>
+<li>Rationalists: we did have (Descartes)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>We can utilize the power of reason to discover features of our own minds that tint all our experiences.</li>
+</ul>
+<h3 id="Immanuel-Kant-–-moral-philosophy"><a href="#Immanuel-Kant-–-moral-philosophy" class="headerlink" title="Immanuel Kant – moral philosophy"></a>Immanuel Kant – moral philosophy</h3><ul>
+<li>The decision must be based on reason, which tells you what your duty is, regardless of emotions.</li>
+<li>Duty &gt; emotions</li>
+<li>Feelings simply cloud the issue, making it more difficult to see that someone is genuinely doing the right thing.</li>
+<li>Intentions</li>
+<li>We all have an absolute duty to tell the truth or, a Categorical Imperative to do so.</li>
+<li>Imperative: order</li>
+<li>Categorical Imperative: an order telling you what your duty is</li>
+<li>Hypothetical imperatives: “If you want x, do y.”</li>
+<li>Morality is a system of categorical imperatives.</li>
+<li>Your moral duty is your moral duty whatever the consequences and whatever the circumstances.</li>
+<li>“What if everyone did that?” Don’t make a special case for yourself.</li>
+</ul>
+<p> </p>
+<h3 id="Johann-Fichte"><a href="#Johann-Fichte" class="headerlink" title="Johann Fichte"></a>Johann Fichte</h3><h3 id="Friedrich-Schelling"><a href="#Friedrich-Schelling" class="headerlink" title="Friedrich Schelling"></a>Friedrich Schelling</h3><p> </p>
+<h3 id="Georg-W-F-Hegel"><a href="#Georg-W-F-Hegel" class="headerlink" title="Georg W.F. Hegel"></a>Georg W.F. Hegel</h3><ul>
+<li>The owl of Minerva flies only at dusk.<ul>
+<li>Wisdom and understanding in the course of human history will only come fully at a late stage.</li>
+</ul>
+</li>
+<li>Grew up in the era of the French Revolution  the real sense that fundamental assumptions could be overturned.</li>
+<li>Hegel rejects Kant’s view that noumenal reality lies beyond the phenomenal world. He concluded that the mind shaping reality just is reality. There is nothing beyond it.</li>
+<li>Everything is in a process of change, and that change takes the form of a gradual increase in self-awareness, our state of self-awareness being fixed by the period in which we live.</li>
+<li>Reality is constantly moving towards its goal of understanding itself. History isn’t in any sense random. It’s going somewhere. (eg. Christian: Christ’s Second Coming)</li>
+<li>Hegel: History’s endpoint is not Christ’s Second Coming. Instead, it is the gradual and inevitable coming to self-awareness of Spirit through the march of reason.</li>
+<li>Idealist: Spirit &#x2F; Mind was fundamental and finds its expression in the physical world</li>
+<li>Hegel retold the history of the world in terms of gradual increases in individual freedom. (Understanding its own freedom)</li>
+<li>Dialectical method: a clash between an idea and its opposite</li>
+<li>True freedom only arose from a properly organized society.<ul>
+<li>Problem: In the ideal society, those who don’t fit in with the powerful organizers’ view of society will, in the name of freedom, be forced to accept this “rational” way of living.</li>
+</ul>
+</li>
+<li>It is philosophers, he believed, who come to realize the ultimate unfolding pattern of human events.</li>
+</ul>
+<p> </p>
+<h2 id="Irrationalism"><a href="#Irrationalism" class="headerlink" title="Irrationalism"></a>Irrationalism</h2><h3 id="Arthur-Schopenhauer"><a href="#Arthur-Schopenhauer" class="headerlink" title="Arthur Schopenhauer"></a>Arthur Schopenhauer</h3><ul>
+<li><p>Life is painful and it would be better not to have been born.</p>
+</li>
+<li><p>We are all caught up in a hopeless cycle of wanting things, getting them, and then wanting more things.</p>
+</li>
+<li><p>All life involves suffering but at a deeper level, there is no such thing as ‘the self’: if we recognize that, we can achieve enlightenment.</p>
+</li>
+<li><p><em>The World as Will and Representation</em></p>
+</li>
+<li><p>Reality</p>
+<ul>
+<li>Exists as Will: blind driving force that is found in absolutely everything that exists. It is present in every part of nature.</li>
+<li>Exists as Representation:<ul>
+<li>the world as we experience it through our sense</li>
+<li><em>phenomenal</em> world (Kant): our construction of reality in our minds</li>
+<li>Your mind organizes your experience to make sense of it all.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>A deeper reality that exists beyond your experience and the world of appearances</p>
+<table>
+<thead>
+<tr>
+<th align="left">Kant</th>
+<th align="left">Schopenhauer</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Noumenal world</td>
+<td align="left">The World as Will</td>
+</tr>
+<tr>
+<td align="left">Reality could have more than one part.</td>
+<td align="left">We couldn’t assume that the noumenal reality was reality was divided at all. World as Will is a single, unified, directionless force behind everything that is.</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>We can glimpse the World as Will through:</p>
+<ul>
+<li>our own actions</li>
+<li>our experience of art</li>
+</ul>
+</li>
+<li><p>The Will is aimless and blind. It isn’t attempting to bring about any particular result. It’s just a great surge of energy &#x2F; meaningless force. There is no God to give it direction.</p>
+</li>
+<li><p>Art provides a still point so that we can escape the endless cycle of striving and desire for a short time.</p>
+</li>
+<li><p>Music is the best art form because music is a copy of the Will itself. You are glimpsing reality as it truly is.</p>
+</li>
+<li><p>How we should live?</p>
+<ul>
+<li>Harming other people is a kind of self-injury. (eg. Snake biting its tail)</li>
+<li>I care what happens to you because in a way you are part of what we are all part of: the World as Will</li>
+<li>Living a life of an ascetic (sexual chastity and poverty) is the ideal way to cope with existence.</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h3 id="Soren-Kierkegaard"><a href="#Soren-Kierkegaard" class="headerlink" title="Søren Kierkegaard"></a>Søren Kierkegaard</h3><h3 id="Friedrich-Nietzsche"><a href="#Friedrich-Nietzsche" class="headerlink" title="Friedrich Nietzsche"></a>Friedrich Nietzsche</h3><p> </p>
+<h2 id="Marxism"><a href="#Marxism" class="headerlink" title="Marxism"></a>Marxism</h2><h3 id="Karl-Marx"><a href="#Karl-Marx" class="headerlink" title="Karl Marx"></a>Karl Marx</h3><p> </p>
+<h2 id="Utilitarianism"><a href="#Utilitarianism" class="headerlink" title="Utilitarianism"></a>Utilitarianism</h2><h3 id="Jeremy-Bentham-1747-1832"><a href="#Jeremy-Bentham-1747-1832" class="headerlink" title="Jeremy Bentham (1747-1832)"></a>Jeremy Bentham (1747-1832)</h3><ul>
+<li>Utilitarianism &#x2F; the Greatest Happiness Principle: the right thing to do is whatever will produce the most happiness.</li>
+<li>Bentham was the first to explain how this can be put into practice  reform the laws of England so that they were more likely to bring about greater happiness</li>
+<li>Happiness: pleasure and the absence of pain</li>
+<li>Pleasure is the only thing that is good in itself.</li>
+<li>The Felicific Calculus: method for calculating happiness</li>
+<li>“Utility &#x3D; Pleasure * Time * Intensity * Future Pleasure - Pain”</li>
+<li>How pleasure is produced doesn’t matter at all. All that matters is the amount of pleasurable experience.</li>
+<li>The rightness or wrongness of what we do comes down to the likely results. These can differ according to circumstances. <ul>
+<li>If greater happiness results from telling a lie than not, then that is the morally right action in those circumstances.</li>
+</ul>
+</li>
+<li>A radical theory to put forward at the end of the 18th century<ul>
+<li>In calculating happiness, everyone’s happiness was equal.</li>
+<li>No one gets special treatment. The pleasure of an aristocrat counted no more than the pleasure of a poor worker.</li>
+<li>Animals are capable of pleasure and pain. So they were part of his happiness equation.</li>
+</ul>
+</li>
+<li>Thought experiment: VR machine?</li>
+</ul>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="John-Mill-1806-1873"><a href="#John-Mill-1806-1873" class="headerlink" title="John Mill (1806-1873)"></a>John Mill (1806-1873)</h3><ul>
+<li>Extreme homeschooler<ul>
+<li>His father, a friend of Bentham, shared Locke’s view that a young child’s mind was empty. If you brought a child up in the right way, he&#x2F;she would develop into a genius.</li>
+<li>The Mills would stay at Bentham’s house in the Surrey countryside each summer.</li>
+</ul>
+</li>
+<li>Agreed with Bentham: The right action is always the one that produces the most happiness.</li>
+<li>Updated version: Distinguished between higher and lower pleasures<ul>
+<li>Example: Contented pig VS. Sad human being?</li>
+</ul>
+</li>
+<li>You could have different kinds of pleasure and that some were better than others, so much better that no quantity of the lower pleasure could ever match the smallest quantity of the higher one.<ul>
+<li>Low, animal pleasures &lt;&lt; high, intellectual pleasures</li>
+</ul>
+</li>
+<li>It becomes harder to calculate the quantities and qualities of pleasure. Mill gives no way of working out an exchange rate between the different currencies of higher and lower pleasures.</li>
+<li>Applied his utilitarian thinking to all aspects of life: In right circumstances, human beings flourish, and that produces good consequences not just for the individual concerned, but for the whole society – it maximizes happiness.</li>
+<li><em>On Liberty</em>: giving each person space to develop as they saw fit was the best way to organize society</li>
+<li>Harm Principle: Every adult should be free to live as he&#x2F;she pleases as long as no one else is harmed in the process.<ul>
+<li>Counterargument: a man with no family drank to death. Why shouldn’t we stop him?</li>
+</ul>
+</li>
+<li>Greater happiness would come from individuals having greater freedom in how they behaved.</li>
+<li>He hated ‘the tyranny of the majority’, the way that social pressures worked to prevent many people from doing what they wanted to do or become.</li>
+<li>It is better to let each of us make our own mistakes than to force us to conform with one way of living.</li>
+<li>Geniuses need freedom in order to develop.</li>
+<li>Freedom of Speech and open discussion were of great benefit to society.<ul>
+<li>It forced people to think hard about what they believed.</li>
+<li>If your views haven’t been challenged, you’ll probably holding them as ‘dead dogmas’.</li>
+</ul>
+</li>
+<li>Feminism<ul>
+<li><em>The Subjection of Women</em>: The sexes should be treated equally both in law and in society more generally.</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Amanda Lu</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://ilong4rennes.github.io/2022/07/25/history-of-western-philosophy/">https://ilong4rennes.github.io/2022/07/25/history-of-western-philosophy/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Carpe diem</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Philosophy/"># Philosophy</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2022/07/25/British-Literature/">British Literature</a>
+            
+            
+            <a class="next" rel="next" href="/2022/07/24/hello-world/">Hello World</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Amanda Lu | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

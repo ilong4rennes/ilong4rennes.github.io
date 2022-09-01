@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Amanda Lu">
+
+
+
+
+
+<title>36200 Reasoning with Data - Notes | AL&#39;s Voyage</title>
+
+
+
+    <link rel="icon" href="/image/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">楚练照川明</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">楚练照川明</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">36200 Reasoning with Data - Notes</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Amanda Lu</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">July 29, 2022&nbsp;&nbsp;6:09:16</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/Statistics/">Statistics</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="Lecture-1-Background-and-Elements-of-Statistical-Thinking"><a href="#Lecture-1-Background-and-Elements-of-Statistical-Thinking" class="headerlink" title="Lecture 1: Background and Elements of Statistical Thinking"></a>Lecture 1: Background and Elements of Statistical Thinking</h1><h2 id="Three-common-aspects-in-data-science"><a href="#Three-common-aspects-in-data-science" class="headerlink" title="Three common aspects in data science"></a><strong>Three common aspects in data science</strong></h2><ul>
+<li>Sampling and study design (“Design”) - 3rd week</li>
+<li>Exploratory data analysis, ‘EDA’ (“Description” &#x2F; descriptive statistics) - 1st-2nd week + project 1</li>
+<li>Inference (“Decide” &#x2F; “Deduce”) - last half of the course + project 2</li>
+</ul>
+<p> </p>
+<h2 id="Probability-and-distributions"><a href="#Probability-and-distributions" class="headerlink" title="Probability and distributions"></a><strong>Probability and distributions</strong></h2><ul>
+<li>The body of theory that makes formal inference possible.</li>
+</ul>
+<p> </p>
+<h2 id="The-‘statistical-perspective’"><a href="#The-‘statistical-perspective’" class="headerlink" title="The ‘statistical perspective’"></a><strong>The ‘statistical perspective’</strong></h2><ul>
+<li>We learn truths about the world through data.</li>
+<li>But variation in data is omnipresent, unavoidable, even natural.</li>
+<li>However, if the source of variation is random, then the variation can be minimized with sample size, modeled with distributions, and measured with probability and margins of error.<ul>
+<li>Must include some assessment of the variation</li>
+<li>Between individuals: standard deviation</li>
+<li>Between groups: standard error</li>
+<li>Between one sample and the population: probability &#x2F; margin of error</li>
+</ul>
+</li>
+<li>Therefore, good scientific studies intentionally impose randomness, through the random selection of the people or things, and randomized assignment of the experimental treatment.</li>
+<li>Random selection is why a study can be generalized to the world at large.</li>
+<li>Randomized assignment of the experimental treatment is why a cause can be deduced for an observed effect.<ul>
+<li>Correlation isn’t causation.</li>
+</ul>
+</li>
+<li>Data analysis involves many series of managed choices and judgements.</li>
+</ul>
+<p> </p>
+<h1 id="Lecture-2-The-Big-Picture-of-Elementary-Inference-Identifying-Data-Types-and-EDA-for-univariate-categorical-data"><a href="#Lecture-2-The-Big-Picture-of-Elementary-Inference-Identifying-Data-Types-and-EDA-for-univariate-categorical-data" class="headerlink" title="Lecture 2: The Big Picture of Elementary Inference; Identifying Data Types; and EDA for univariate categorical data"></a>Lecture 2: The Big Picture of Elementary Inference; Identifying Data Types; and EDA for univariate categorical data</h1><h2 id="The-Big-Picture-of-Inference"><a href="#The-Big-Picture-of-Inference" class="headerlink" title="The Big Picture of Inference"></a><strong>The Big Picture of Inference</strong></h2><ul>
+<li><strong>Population</strong>: the complete set of people or objects of interest</li>
+<li><strong>Sample</strong>: the subset of the population for which data can actually be obtained in a study</li>
+<li><strong>Parameter</strong>: a fixed number summarizing some feature of a population<ul>
+<li>usually unknown, since an entire population can usually never be measured</li>
+</ul>
+</li>
+<li><strong>Statistic</strong>: a computed number that summarizes sample data in some appropriate way, which estimates a parameter.<ul>
+<li>Statistic is the best <strong>estimator</strong> of the corresponding parameter</li>
+<li>Statistic varies from sample to sample, hence it’s an imperfect estimator of the parameter</li>
+<li>If the source of the variation of the statistic is random, then the statistic has a probability distribution.</li>
+</ul>
+</li>
+<li>Inference: specifying the estimate of an unknown parameter (i.e., giving the estimate along with some measure of how far off the estimate is)</li>
+</ul>
+<p> </p>
+<h2 id="Identifying-data-types"><a href="#Identifying-data-types" class="headerlink" title="Identifying data types"></a><strong>Identifying data types</strong></h2><ul>
+<li><strong>Individuals (or Units)</strong>: the people or objects described in the dataset</li>
+<li><strong>Variables</strong>: a characteristic which varies from person to person. It can typically be identified by a column in a spreadsheet. The name of the variable is identified by the column name.<ul>
+<li>Sex, age, weight…</li>
+</ul>
+</li>
+<li><strong>Quantitative</strong>: naturally numerical</li>
+<li><strong>Categorical (or Qualitative)</strong>: not naturally numerical</li>
+</ul>
+<p> </p>
+<h2 id="Representations-of-the-distribution-of-one-categorical-variable"><a href="#Representations-of-the-distribution-of-one-categorical-variable" class="headerlink" title="Representations of the distribution of one categorical variable"></a><strong>Representations of the distribution of one categorical variable</strong></h2><ul>
+<li>Frequency table for categorical data<ul>
+<li>Distribution: any representation of data showing what values the variables take and how often each such value appears.</li>
+</ul>
+</li>
+<li>Percent &#x2F; Relative frequency</li>
+<li>Frequency bar graph for categorical data</li>
+<li>Percentage frequency bar graph for categorical data</li>
+<li>Pie graph for categorical data</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Amanda Lu</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://ilong4rennes.github.io/2022/07/29/36200-Reasoning-with-Data-Notes/">https://ilong4rennes.github.io/2022/07/29/36200-Reasoning-with-Data-Notes/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Carpe diem</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Statistics/"># Statistics</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2022/07/29/guan-ying-list/">音乐剧/话剧</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Amanda Lu | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
